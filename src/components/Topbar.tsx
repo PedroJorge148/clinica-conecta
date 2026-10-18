@@ -1,4 +1,5 @@
 export function Topbar() {
+  <>
   return (
     <header className="w-full bg-white px-6 py-3 flex items-center justify-between border-b border-slate-100 gap-4">
       
@@ -61,4 +62,7 @@ export function Topbar() {
 
     </header>
   );
+</>
 }
+
+export default Topbar;
