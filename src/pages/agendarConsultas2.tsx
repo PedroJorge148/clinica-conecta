@@ -1,3 +1,4 @@
+import { Topbar } from "../components/Topbar";
 export function AgendarConsultas2() {
   return (
     <div>

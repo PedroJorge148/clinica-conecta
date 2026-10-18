@@ -1,66 +1,65 @@
+<<<<<<< HEAD
 export function Topbar() {
+=======
+import React from 'react';
+
+export const Topbar: React.FC = () => {
+>>>>>>> fc2d0497e9baa6ff16bf7149c251d1244bcef1f6
   return (
-    <header className="w-full bg-white px-6 py-3 flex items-center justify-between border-b border-slate-100 gap-4">
-      
-      {/* 1. LADO ESQUERDO: Breadcrumbs */}
-      <div className="flex flex-col text-sm">
-        <span className="text-slate-400 text-xs font-medium">
+    <header className="w-full bg-white border-b border-slate-100 px-6 py-3 flex items-center justify-between gap-4">
+      {/* Esquerda: Breadcrumb e Título */}
+      <div className="flex flex-col min-w-max">
+        <span className="text-xs text-slate-400 font-normal">
           Portal do paciente /
         </span>
-        <span className="text-slate-800 font-bold">
+        <h1 className="text-sm font-bold text-slate-900 leading-tight">
           Agendar consulta
-        </span>
+        </h1>
       </div>
 
-      {/* 2. CENTRO: Barra de Pesquisa */}
-      <div className="flex-1 max-w-2xl mx-4">
+      {/* Centro: Campo de Pesquisa */}
+      <div className="flex-1 max-w-3xl mx-4">
         <div className="relative flex items-center">
-          <span className="absolute left-3 text-slate-400">
-            🔍
-          </span>
           <input
             type="text"
             placeholder="Buscar consultas, exames..."
-            className="w-full bg-slate-50 hover:bg-slate-100 focus:bg-white text-slate-700 text-sm pl-9 pr-4 py-2.5 rounded-xl border border-transparent focus:border-blue-300 focus:outline-none transition"
+            className="w-full bg-[#f0f4f9] text-sm text-slate-800 placeholder-slate-400 pl-10 pr-4 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
           />
         </div>
       </div>
 
-      {/* 3. LADO DIREITO: Notificações e Perfil */}
-      <div className="flex items-center gap-3">
-        
+      {/* Direita: Notificação e Perfil */}
+      <div className="flex items-center gap-3 min-w-max">
         {/* Botão de Notificação */}
-        <button className="p-2.5 bg-slate-50 hover:bg-slate-100 rounded-xl text-slate-600 border border-slate-100 transition">
-          🔔
+        <button 
+          aria-label="Notificações"
+          className="p-2.5 bg-[#f0f4f9] hover:bg-slate-200/70 text-slate-700 rounded-xl transition-colors"
+        >
+
         </button>
 
-        {/* Cartão do Utilizador */}
-        <div className="flex items-center gap-3 bg-slate-50 hover:bg-slate-100 border border-slate-100 px-3 py-1.5 rounded-xl cursor-pointer transition">
-          {/* Avatar com Iniciais */}
-          <div className="w-8 h-8 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center">
+        {/* Menu do Perfil */}
+        <div className="flex items-center gap-3 bg-[#f0f4f9] hover:bg-slate-200/70 px-3 py-1.5 rounded-xl cursor-pointer transition-colors">
+          <div className="w-8 h-8 rounded-xl bg-blue-700 text-white flex items-center justify-center font-semibold text-xs">
             MM
           </div>
-          
-          {/* Nome e Tipo de Conta */}
           <div className="flex flex-col text-left">
-            <span className="text-sm font-semibold text-slate-800 leading-tight">
+            <span className="text-xs font-bold text-slate-900 leading-tight">
               Milena Mattos
             </span>
-            <span className="text-xs text-slate-400">
+            <span className="text-[11px] text-slate-400 font-normal leading-tight">
               Paciente
             </span>
           </div>
 
-          {/* Seta Dropdown */}
-          <span className="text-xs text-slate-400 ml-1">
-            ▼
-          </span>
         </div>
-
       </div>
-
     </header>
   );
+<<<<<<< HEAD
 }
 
 export default Topbar;
+=======
+};
+>>>>>>> fc2d0497e9baa6ff16bf7149c251d1244bcef1f6

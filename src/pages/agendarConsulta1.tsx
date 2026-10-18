@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 
 const especialidades = [
@@ -236,3 +237,5 @@ export default function AgendarConsulta1() {
     </div>
   );
 }
+=======
+>>>>>>> fc2d0497e9baa6ff16bf7149c251d1244bcef1f6
