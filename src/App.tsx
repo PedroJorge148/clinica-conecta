@@ -1,13 +1,11 @@
-import Home from "./pages/Home/home"
+import Home from "./pages/Home/home";
+import { Topbar } from "./components/Topbar";
 
-function App() {
-    return (
-    <>
-      <div>
-        <Home />
-      </div>
-    </>
+export default function App() {
+  return (
+    <div className="min-h-screen bg-slate-50">
+      <Topbar />
+      <Home />
+    </div>
   );
 }
-
-export default App
