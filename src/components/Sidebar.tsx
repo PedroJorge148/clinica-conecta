@@ -5,7 +5,7 @@ export default function Sidebar() {
       <div>
         {/* Logo / Título/ Descrição*/}
         <div className="mb-8">
-          <h1 className="text-xl font-extrabold text-bebe">Conecta</h1>
+          <img src="..assets/logo.png" alt="Logo" className="w-9 h-3 mb-2" />
           <p className="mb-8">Menu</p>
         </div>
 
