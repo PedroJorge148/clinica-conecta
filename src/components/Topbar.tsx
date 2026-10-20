@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 export function Topbar() {
-=======
-import React from 'react';
-
-export const Topbar: React.FC = () => {
->>>>>>> fc2d0497e9baa6ff16bf7149c251d1244bcef1f6
   return (
     <header className="w-full bg-white border-b border-slate-100 px-6 py-3 flex items-center justify-between gap-4">
       {/* Esquerda: Breadcrumb e Título */}
@@ -56,10 +50,6 @@ export const Topbar: React.FC = () => {
       </div>
     </header>
   );
-<<<<<<< HEAD
 }
 
 export default Topbar;
-=======
-};
->>>>>>> fc2d0497e9baa6ff16bf7149c251d1244bcef1f6
