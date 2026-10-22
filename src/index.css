@@ -7,8 +7,8 @@
   --color-ceu: #87CEEA;
   --color-bebe: #ADD9E6;
   --color-vermelho: #F90004
-}
+  --color-white: #FFFFFF;
 
-@theme {
   --font-sans: 'Manrope', sans-serif;
 }
+
