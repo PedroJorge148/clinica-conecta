@@ -52,7 +52,7 @@ export default function Sidebar() {
           </a>
           
           <div className="mt-8 mb-16">
-            <a href="#" className=" flex items-center gap-3 block w-full p-2 rounded-lg text-vermelho hover:bg-bic active:bg-bic transition whitespace-nowrap !no-underline">
+            <a href="#" className=" flex items-center gap-3 block w-full p-2 rounded-lg text-[vermelho] hover:bg-bic active:bg-bic transition whitespace-nowrap !no-underline">
               <i className="bi bi-box-arrow-right text-lg text-vermelho"></i>
               Sair
             </a>
