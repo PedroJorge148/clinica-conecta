@@ -1,3 +1,4 @@
+import Topbar from "@components/Topbar";
 import Sidebar from "../../components/Sidebar";
 
 
@@ -6,6 +7,9 @@ export default function Home(){
         <>
             <div className="flex">
                 <Sidebar/>
+            </div>
+            <div className="flex">
+                <Topbar/>
             </div>
         </>
     );
