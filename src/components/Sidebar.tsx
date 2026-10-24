@@ -13,7 +13,7 @@ export default function Sidebar() {
         {/* Links de Navegação */}
         <nav className="flex flex-col space-y-2 ">
 
-          <p className="text-sm font-medium text-bebe">MENU</p>
+          <p className="text-sm font-medium text-baby">MENU</p>
           <a href="#" className=" flex items-center gap-3 block w-full p-2 rounded-lg text-white hover:bg-bic active:bg-bic hover:text-bebe transition whitespace-nowrap !no-underline">
             <i className="bi bi-house-door text-lg "></i> 
             Início
@@ -52,18 +52,12 @@ export default function Sidebar() {
           </a>
           
           <div className="mt-8 mb-16">
-            <a href="#" className=" flex items-center gap-3 block w-full p-2 rounded-lg text-white hover:bg-bic active:bg-bic transition whitespace-nowrap !no-underline">
-              <i className="bi bi-box-arrow-right text-lg text-vermelho"></i>
+            <a href="#" className=" flex items-center gap-3 block w-full p-2 rounded-lg !text-red hover:bg-bic active:bg-bic transition whitespace-nowrap !no-underline">
+              <i className="bi bi-box-arrow-right text-lg text-red"></i>
               Sair
             </a>
           </div>
         </nav>
-      </div>
-
-      {/* 2. Parte Inferior: Perfil do Usuário / Botão de Sair */}
-      <div className="border-t border-gray-800 pt-4">
-        <p className="text-sm text-gray-400">Logado como:</p>
-        <p className="text-sm font-medium text-white">seu@email.com</p>
       </div>
     </aside>
   );
