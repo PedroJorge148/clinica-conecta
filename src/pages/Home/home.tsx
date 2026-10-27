@@ -1,7 +1,7 @@
 
 import Sidebar from "../../components/Sidebar";
 import Topbar from "../../components/Topbar";
-import CardHome from "../../components/CardHome";
+import {CardHome} from "../../components/CardHome";
 
 export default function Home(){
     return(
@@ -12,12 +12,9 @@ export default function Home(){
             <div className="flex">
                 <Topbar/>
             </div>
-            <div className="flex">
-                <CardHome/>
-            </div>
-            
+
             {/* Conteúdo Principal */}
-            <main className="flex-1 ml-[22%] mr-9 my-7 p-7 h-full bg-ceu rounded-2xl">
+            <main className="flex-1 ml-[22%] mr-9 my-7 p-7 h-full bg-ceu rounded-2xl ">
                 <div>
                     <p className="text-lg font-semibold text-marinho">Bom dia, Milena Mattos!</p>
                     <h2 className="text-2xl font-bold text-white">Tudo Conectado, do seu jeito.</h2>
@@ -37,6 +34,15 @@ export default function Home(){
                 </div>            
                 
             </main>
+
+            {/*Agoras os cards*/}
+            <div className="flex">
+                <CardHome text="Consultas" number={3} icon="bi bi-calendar-check"/>
+                <CardHome text="Exames" number={5} icon="bi bi-file-earmark-medical"/>
+                <CardHome text="Mensagens" number={2} icon="bi bi-chat-dots"/>
+                <CardHome text="Mensagens" number={2} icon="bi bi-chat-dots"/>
+            </div>
+            
         </>
     );
 }
